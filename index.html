@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+  <!-- bootstrap css cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="./style/dashboard.css">
+</head>
+
+<body>
+
+  <main class="container-fluid">
+    <div class="row">
+      <!-- Main Card -->
+      <div class="col-sm-12 col-md-4 col-lg-3 main__card d-flex justify-content-end">
+        <div class="main__card-bg me-2">
+          <button id="daily">Daily</button>
+          <button id="weekly">Weekly</button>
+          <button id="monthly">Month</button>
+          <div class="main__card-front d-flex">
+            <img src="./images/image-jeremy.png" alt="Jermey">
+            <div class="main__card-front-txt">
+              <p class="reporte-for">Report for</p>
+              <p class="name">Jermey Robson</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-12 col-md-8 col-lg-9 row cards">
+        <!-- Card Templete -->
+        <div class="col-sm-12 col-md-3 card d-none template-card">
+          <img class="card-img_top" src="./images/icon-work.svg" alt="Card image">
+          <!-- <img id="card__b" src="" alt=""> -->
+          <div class="card__front">
+            <header>
+              <span id="card__front-title" class="text-white">Work</span>
+              <img src="./images/icon-ellipsis.svg" alt="">
+            </header>
+            <main>
+              <p class="current-time text-white display-4">32hrs</p>
+              <p class='last-time'>Last Week - 36hrs</p>
+            </main>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </main>
+
+
+  <!-- jquery cdn -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- js sources -->
+  <script src="../js/dashboard.js"></script>
+
+  <!-- bootstrap js cdn -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
